@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nepali Kanda Videos Link - Step 3</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #eee;
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: #ff4c4c;
+      padding: 25px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .box {
+      background: #1c1c1c;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    }
+    .ad-box {
+      background: #2a2a2a;
+      border: 2px dashed #999;
+      text-align: center;
+      padding: 35px;
+      margin: 20px 0;
+      font-style: italic;
+      border-radius: 8px;
+      color: #ccc;
+    }
+    .btn {
+      display: none; /* initially hidden */
+      width: 260px;
+      margin: 35px auto;
+      padding: 15px;
+      text-align: center;
+      background: linear-gradient(45deg, #ff4c4c, #ff9800);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: linear-gradient(45deg, #ff9800, #ff4c4c);
+      transform: scale(1.05);
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 15px 0;
+    }
+    .timer {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      color: #ff9800;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nepali Kanda Videos Link - Step 3</h1>
+    <p>Almost there! Unlock the final step after a short wait.</p>
+  </header>
+
+  <section class="box">
+    <h2>Exclusive Content Awaits</h2>
+    <p>In this step, you’ll see a mix of exciting Nepali Kanda videos and supporting ads. Please enjoy the content and support the platform by allowing ads to load.</p>
+  </section>
+
+  <div class="ad-box">[ Top Banner Ad Space ]</div>
+  <div class="ad-box">[ Mid Page Ad Space ]</div>
+  <div class="ad-box">[ Bottom Ad Space ]</div>
+
+  <section class="box">
+    <h2>Ready for Final Step?</h2>
+    <p>You need to wait for a few seconds before you can continue to the final step.</p>
+    <div class="timer" id="timer">Please wait 10 seconds...</div>
+    
+    <!-- 🔗 Replace # below with your final site link -->
+    <a href="Step4.html" class="btn" id="continueBtn">Click Here to Continue</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nepali Kanda Videos. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let countdown = 10; // seconds
+    const timerEl = document.getElementById('timer');
+    const btn = document.getElementById('continueBtn');
+
+    const interval = setInterval(() => {
+      countdown--;
+      timerEl.textContent = `Please wait ${countdown} seconds...`;
+      if(countdown <= 0){
+        clearInterval(interval);
+        timerEl.style.display = 'none';
+        btn.style.display = 'block';
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
